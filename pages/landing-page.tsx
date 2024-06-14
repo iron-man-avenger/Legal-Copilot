@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-import SearchBar from "../components/search-bar";
 import FrameComponent from "../components/frame-component";
 import styles from "./landing-page.module.css";
 
@@ -17,8 +16,8 @@ const LandingPage: NextPage = () => {
   }, [router]);
 
   const onCLMTextClick = useCallback(() => {
-    // Please sync "CLM" to the project
-  }, []);
+    router.push("/c-l-m");
+  }, [router]);
 
   const onDraftTextClick = useCallback(() => {
     router.push("/draft");
@@ -33,18 +32,14 @@ const LandingPage: NextPage = () => {
   }, [router]);
 
   const onFrameIconClick = useCallback(() => {
-    // Please sync "History" to the project
-  }, []);
-
-  const onFrameIconClick1 = useCallback(() => {
-    // Please sync "Landing Page" to the project
-  }, []);
+    router.push("/history1");
+  }, [router]);
 
   return (
     <div className={styles.landingPage}>
       <img className={styles.landingPageChild} alt="" src="/frame-5.svg" />
-      <header className={styles.main}>
-        <div className={styles.content}>
+      <header className={styles.frameParent}>
+        <div className={styles.groupWrapper}>
           <img
             className={styles.groupIcon}
             loading="lazy"
@@ -53,7 +48,7 @@ const LandingPage: NextPage = () => {
             onClick={onGroupClick}
           />
         </div>
-        <div className={styles.frameParent}>
+        <div className={styles.frameGroup}>
           <div className={styles.documentWrapper}>
             <a className={styles.document} onClick={onDocumentTextClick}>
               Document
@@ -91,19 +86,15 @@ const LandingPage: NextPage = () => {
           <div className={styles.frameWrapper}>
             <img
               className={styles.frameIcon1}
-              loading="lazy"
               alt=""
-              src="/frame-1.svg"
-              onClick={onFrameIconClick1}
+              src="/frame-11.svg"
+              onClick={onFrameContainerClick}
             />
           </div>
         </div>
       </header>
-      <section className={styles.searchContainer}>
-        <div className={styles.searchBarParent}>
-          <SearchBar />
-          <FrameComponent />
-        </div>
+      <section className={styles.landingPageInner}>
+        <FrameComponent />
       </section>
     </div>
   );
