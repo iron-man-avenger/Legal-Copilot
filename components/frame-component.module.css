@@ -1,0 +1,132 @@
+.uploadActionChild {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  border-radius: var(--br-11xl);
+  width: 131px;
+  height: 42px;
+  overflow: hidden;
+  display: none;
+}
+.documentUpload {
+  margin: 0;
+  position: absolute;
+  top: 21px;
+  left: 16px;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 235px;
+  height: 83px;
+  z-index: 1;
+}
+.uploadButtonIcon {
+  position: absolute;
+  top: 35px;
+  left: 22px;
+  width: 222px;
+  height: 222px;
+  object-fit: contain;
+  z-index: 2;
+}
+.draftActionChild,
+.uploadAction {
+  border-radius: var(--br-11xl);
+  overflow: hidden;
+}
+.uploadAction {
+  height: 225px;
+  width: 267px;
+  position: relative;
+  background-color: var(--color-oldlace-100);
+  flex-shrink: 0;
+  min-width: 267px;
+  cursor: pointer;
+}
+.draftActionChild {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 131px;
+  height: 42px;
+  display: none;
+}
+.draftALegal {
+  margin: 0;
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 241px;
+  height: 54px;
+  z-index: 1;
+}
+.draftButtonIcon {
+  position: absolute;
+  top: 79px;
+  left: 30px;
+  width: 186px;
+  height: 186px;
+  object-fit: contain;
+  z-index: 2;
+}
+.draftAction {
+  height: 230px;
+  width: 258px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-100);
+  overflow: hidden;
+  flex-shrink: 0;
+  min-width: 258px;
+  cursor: pointer;
+}
+.uploadActions,
+.uploadActionsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.uploadActions {
+  width: 610px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.uploadActionsWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-9xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 725px) {
+  .draftAction,
+  .uploadAction {
+    flex: 1;
+  }
+  .uploadActions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .documentUpload,
+  .draftALegal {
+    font-size: var(--font-size-xl);
+    line-height: 22px;
+  }
+}

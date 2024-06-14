@@ -1,0 +1,449 @@
+.groupIcon,
+.searchChild {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.searchChild {
+  width: 46px;
+  height: 46px;
+  display: none;
+}
+.groupIcon {
+  align-self: stretch;
+  height: 30px;
+  max-width: 100%;
+}
+.nestedLayout {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl) var(--padding-6xs) 0;
+  box-sizing: border-box;
+}
+.document {
+  text-decoration: none;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.documentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-7xs) 0 0;
+}
+.clm {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.clmWrapper {
+  width: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+}
+.draft {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.draftWrapper {
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.home {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+}
+.frameParent,
+.homeWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.homeWrapper {
+  flex: 1;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-black);
+  padding: var(--padding-12xs) var(--padding-3xs);
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-white);
+}
+.frameParent {
+  width: 423px;
+  border-radius: 0 0 var(--br-11xl) var(--br-11xl);
+  background-color: var(--color-white);
+  flex-shrink: 0;
+  padding: var(--padding-5xs) 27px var(--padding-4xs) var(--padding-17xl);
+  box-sizing: border-box;
+  gap: var(--gap-8xl);
+  max-width: 100%;
+}
+.subLayoutChild {
+  align-self: stretch;
+  width: 206px;
+  position: relative;
+  border-radius: 0 0 0 var(--br-3xs);
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 47px;
+}
+.subLayout {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.frameChild,
+.frameChild1,
+.frameDiv,
+.frameInner,
+.frameItem {
+  height: 130px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-11xl);
+  overflow: hidden;
+  min-width: 128px;
+  max-width: 131px;
+}
+.frameChild {
+  background-color: var(--color-oldlace-100);
+  cursor: pointer;
+}
+.frameChild1,
+.frameDiv,
+.frameInner,
+.frameItem {
+  background-color: var(--color-floralwhite);
+}
+.frameChild1,
+.frameDiv,
+.frameInner {
+  background-color: var(--color-whitesmoke-100);
+}
+.frameChild1,
+.frameDiv {
+  background-color: var(--color-whitesmoke-200);
+}
+.frameChild1 {
+  background-color: var(--color-gainsboro);
+}
+.frameGroup {
+  width: 783px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+.frameGroup,
+.layout,
+.layoutInner {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.layoutInner {
+  width: 1103px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.layout {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 160px;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.stateLayer1 {
+  flex-direction: row;
+  padding: var(--padding-5xs);
+}
+.container,
+.leadingIcon,
+.stateLayer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+.leadingIcon {
+  flex-direction: column;
+  padding: var(--padding-9xs);
+}
+.supportingText {
+  position: relative;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14.5px var(--padding-mid);
+  box-sizing: border-box;
+  min-width: 152px;
+  max-width: 100%;
+}
+.icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.stateLayer2 {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs);
+}
+.container1,
+.stTrailingIcon,
+.stateLayer2 {
+  align-items: center;
+  justify-content: center;
+}
+.container1 {
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-9xs);
+}
+.stTrailingIcon {
+  height: 48px;
+  display: none;
+  flex-direction: column;
+}
+.icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.stateLayer3 {
+  flex-direction: row;
+  padding: var(--padding-5xs);
+}
+.container2,
+.ndTrailingIcon,
+.stateLayer3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+.ndTrailingIcon {
+  flex-direction: column;
+  padding: var(--padding-9xs);
+}
+.searchBar,
+.stateLayer,
+.trailingElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.searchBar,
+.stateLayer {
+  box-sizing: border-box;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.stateLayer {
+  flex: 1;
+  padding: var(--padding-9xs);
+  gap: var(--gap-9xs);
+}
+.searchBar {
+  position: absolute;
+  top: 19px;
+  left: 17px;
+  border-radius: var(--br-9xl);
+  background-color: #fbfbfb;
+  border: 1px solid #8f8f8f;
+  width: 622px;
+  overflow: hidden;
+}
+.backgroundShapeIcon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  border-radius: var(--br-61xl) 0 0 var(--br-31xl);
+  width: 65px;
+  height: 58px;
+  object-fit: contain;
+}
+.inputBackground {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  overflow: hidden;
+  z-index: 1;
+}
+.searchInput {
+  height: 100px;
+  flex: 1;
+  position: relative;
+  min-width: 415px;
+  max-width: 100%;
+}
+.emptyContainerChild {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 26px;
+}
+.searchBarContainer {
+  width: 717px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-14xl);
+  max-width: 100%;
+}
+.search,
+.searchBarLayout {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.searchBarLayout {
+  width: 1113px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--m3-sys-light-on-surface-variant);
+  font-family: var(--font-sedan);
+}
+.search {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-lg) 0 var(--padding-4xs) var(--padding-38xl);
+  gap: 246px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1125px) {
+  .layout {
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    display: none;
+  }
+  .layout {
+    gap: 40px;
+  }
+  .stateLayer {
+    flex-wrap: wrap;
+  }
+  .searchInput {
+    height: auto;
+    min-height: 100;
+    min-width: 100%;
+  }
+  .searchBarContainer {
+    gap: var(--gap-base);
+  }
+  .search {
+    gap: 123px;
+    padding-left: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameGroup {
+    gap: var(--gap-base);
+  }
+  .layout {
+    gap: var(--gap-xl);
+  }
+  .search {
+    gap: 61px;
+  }
+}

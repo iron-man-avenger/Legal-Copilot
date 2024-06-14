@@ -1,0 +1,674 @@
+.groupIcon {
+  width: 113px;
+  height: 30px;
+  position: relative;
+}
+.groupWrapper {
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+}
+.document {
+  text-decoration: none;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.documentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-3xs) 0 0;
+}
+.clm {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.clmWrapper {
+  width: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.draft1 {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  flex-shrink: 0;
+  debug_commit: 69da668;
+}
+.draftWrapper,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.draftWrapper {
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-12xs) 0;
+  cursor: pointer;
+}
+.frameWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-12xs) var(--padding-8xs) 0 0;
+  text-align: center;
+  color: var(--color-white);
+}
+.home {
+  margin-left: -2px;
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  debug_commit: 69da668;
+}
+.frameDiv,
+.homeWrapper {
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.homeWrapper {
+  width: 77px;
+  border-radius: var(--br-4xs);
+  flex-shrink: 0;
+  padding: var(--padding-12xs) 0;
+  cursor: pointer;
+  text-align: center;
+}
+.frameDiv {
+  width: 423px;
+  border-radius: 0 0 var(--br-11xl) var(--br-11xl);
+  padding: var(--padding-5xs) 31px var(--padding-5xs) var(--padding-17xl);
+  gap: var(--gap-4xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+}
+.draftAContract {
+  margin: 0;
+  height: 27px;
+  width: 331px;
+  position: relative;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: calc(100% - 0px);
+}
+.rectangleIcon {
+  height: 81px;
+  width: 78px;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: -10px;
+  object-fit: contain;
+  z-index: 1;
+}
+.draftAContractWithAiParent,
+.frameContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.draftAContractWithAiParent {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-100);
+  flex-direction: row;
+  padding: var(--padding-mini) var(--padding-32xl) var(--padding-3xl);
+  box-sizing: border-box;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+}
+.frameContainer {
+  width: 473px;
+  flex-direction: column;
+  gap: 87px;
+}
+.frameIcon,
+.frameIcon1,
+.searchIcon {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.searchIcon {
+  height: 31px;
+  width: 34px;
+  border-radius: var(--br-3xs);
+}
+.frameIcon,
+.frameIcon1 {
+  cursor: pointer;
+}
+.frameIcon {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+}
+.frameIcon1 {
+  width: 30px;
+  height: 30px;
+}
+.frameFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.frameGroup,
+.searchParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.searchParent {
+  border-radius: 0 0 0 var(--br-3xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-17xl) var(--padding-7xs);
+  gap: var(--gap-lg);
+}
+.frameGroup {
+  align-self: stretch;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.frameChild,
+.ndaAgreement {
+  position: relative;
+}
+.frameChild {
+  height: 44px;
+  width: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.agreementList,
+.agreementNames,
+.agreementNamesInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.agreementNamesInner {
+  flex-direction: row;
+  padding: 0 var(--padding-base) 0 var(--padding-mid);
+}
+.agreementList,
+.agreementNames {
+  flex-direction: column;
+}
+.agreementNames {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-oldlace-100);
+  overflow: hidden;
+  padding: var(--padding-13xl) var(--padding-mid) var(--padding-mini);
+  gap: 21px;
+  z-index: 1;
+}
+.agreementList {
+  flex: 1;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+  min-width: 85px;
+  text-align: left;
+}
+.generalLeaseAgreement {
+  align-self: stretch;
+  position: relative;
+}
+.frameItem {
+  height: 44px;
+  width: 64px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.agreementListInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-4xl) 0 var(--padding-6xl);
+}
+.agreementList1 {
+  flex: 0.855;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-floralwhite);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-14xl) var(--padding-3xs) var(--padding-mini)
+    var(--padding-4xs);
+  box-sizing: border-box;
+  gap: 6px;
+  min-width: 85px;
+  z-index: 1;
+}
+.frameInner,
+.mineDraft {
+  position: relative;
+  flex-shrink: 0;
+}
+.mineDraft {
+  align-self: stretch;
+  height: 15px;
+  display: inline-block;
+}
+.frameInner {
+  height: 44px;
+  width: 64px;
+  overflow: hidden;
+}
+.frameWrapper2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-mini) 0 var(--padding-base);
+}
+.agreementList2,
+.mineDraftParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mineDraftParent {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: #f7f7f6;
+  overflow: hidden;
+  align-items: flex-end;
+  padding: var(--padding-14xl) var(--padding-lg) var(--padding-mini);
+  gap: var(--gap-xs);
+}
+.agreementList2 {
+  flex: 0.9357;
+  align-items: flex-start;
+  padding: var(--padding-10xs) var(--padding-4xs) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.frameChild1,
+.ppaAgreement {
+  position: relative;
+}
+.frameChild1 {
+  height: 44px;
+  width: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.agreementList3,
+.frameWrapper3,
+.ppaAgreementParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper3 {
+  flex-direction: row;
+  padding: 0 var(--padding-lg) 0 13px;
+}
+.agreementList3,
+.ppaAgreementParent {
+  flex-direction: column;
+}
+.ppaAgreementParent {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-200);
+  overflow: hidden;
+  padding: var(--padding-19xl) var(--padding-mini) var(--padding-mini)
+    var(--padding-2xl);
+  gap: 15px;
+}
+.agreementList3 {
+  flex: 0.9357;
+  padding: 0 var(--padding-4xs) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.frameChild2,
+.ndaAgreement1 {
+  position: relative;
+  flex-shrink: 0;
+}
+.ndaAgreement1 {
+  height: 15px;
+  display: inline-block;
+}
+.frameChild2 {
+  height: 44px;
+  width: 64px;
+  overflow: hidden;
+}
+.agreementListChild {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 14px 0 var(--padding-mini);
+}
+.agreementList4,
+.agreementListChild,
+.agreementTypes {
+  display: flex;
+  align-items: flex-start;
+}
+.agreementList4 {
+  border-radius: var(--br-11xl);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-23xl) 19px var(--padding-mini);
+  gap: 9px;
+  text-align: left;
+}
+.agreementTypes {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: 36px;
+}
+.uploadFileBackground {
+  height: 77px;
+  width: 392px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-oldlace-200);
+  border: 1px dashed var(--color-teal);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.uploadReferenceDocument {
+  height: 19px;
+  width: 225px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.uploadIcon {
+  margin-bottom: -10.6px;
+  height: 59.6px;
+  width: 68.8px;
+  position: relative;
+}
+.uploadFileBackgroundParent,
+.uploadReferenceDocumentParent {
+  border-radius: var(--br-11xl);
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.uploadReferenceDocumentParent {
+  height: 52.4px;
+  background-color: var(--color-burlywood);
+  display: flex;
+  align-items: flex-end;
+  padding: 6.8px var(--padding-base) 7.6px var(--padding-6xl);
+  gap: var(--gap-8xl);
+  white-space: nowrap;
+  max-width: 100%;
+  z-index: 1;
+}
+.uploadFileBackgroundParent {
+  background-color: var(--color-oldlace-200);
+  border: 1px dashed var(--color-teal);
+  padding: 11px var(--padding-mini);
+}
+.agreementTypesParent,
+.frameWrapper4,
+.uploadFileBackgroundParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameWrapper4 {
+  width: 786px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-mini);
+}
+.agreementTypesParent {
+  width: 818px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+}
+.frameParent,
+.frameWrapper1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameWrapper1 {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 30px 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 44px;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.draftChild {
+  width: 176px;
+  height: 57px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.searchBar {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  font-family: var(--font-sedan);
+  font-size: var(--font-size-base);
+  color: var(--m3-sys-light-on-surface-variant);
+}
+.rectangleIcon1 {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  border-radius: var(--br-61xl) 0 0 var(--br-31xl);
+  width: 65px;
+  height: 58px;
+  object-fit: cover;
+}
+.frameChild3,
+.frameWrapper5 {
+  position: absolute;
+  border-radius: var(--br-11xl);
+  overflow: hidden;
+}
+.frameChild3 {
+  top: 0;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.frameWrapper5 {
+  right: -46px;
+  bottom: -3px;
+  width: 131px;
+  height: 42px;
+  z-index: 2;
+}
+.rectangleParent {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  z-index: 1;
+}
+.searchBarParent {
+  height: 100px;
+  flex: 1;
+  position: relative;
+  min-width: 413px;
+  max-width: 100%;
+}
+.frameChild4 {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameWrapper6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xl);
+}
+.frameParent1 {
+  width: 707px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+  max-width: 100%;
+}
+.draft,
+.draftInner {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.draftInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  max-width: 100%;
+}
+.draft {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-lg) 0 var(--padding-mini) var(--padding-38xl);
+  gap: 75px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 950px) {
+  .agreementTypes {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  .frameContainer {
+    gap: 43px;
+  }
+  .frameParent {
+    gap: 22px;
+  }
+  .searchBarParent {
+    min-width: 100%;
+  }
+  .draft {
+    gap: 37px;
+    padding-left: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .draftAContractWithAiParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .agreementList1,
+  .agreementList2,
+  .agreementList3 {
+    flex: 1;
+  }
+  .agreementTypes {
+    gap: var(--gap-lg);
+  }
+  .draft {
+    gap: 19px;
+  }
+}
