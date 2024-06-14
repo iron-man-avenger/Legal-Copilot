@@ -47,7 +47,6 @@
   line-height: 27px;
   font-weight: 500;
   color: inherit;
-  cursor: pointer;
 }
 .clmWrapper {
   width: 49px;
@@ -65,7 +64,6 @@
   line-height: 27px;
   font-weight: 500;
   color: inherit;
-  cursor: pointer;
 }
 .draftWrapper {
   width: 44px;
@@ -77,32 +75,26 @@
   box-sizing: border-box;
 }
 .home {
-  margin-left: -2px;
   text-decoration: none;
   flex: 1;
   position: relative;
   line-height: 27px;
   font-weight: 500;
   color: inherit;
-  display: inline-block;
-  flex-shrink: 0;
-  debug_commit: 69da668;
 }
 .frameGroup,
 .homeWrapper {
   overflow: hidden;
-  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  box-sizing: border-box;
 }
 .homeWrapper {
-  width: 77px;
+  flex: 1;
   border-radius: var(--br-4xs);
   background-color: var(--color-black);
-  padding: var(--padding-12xs) 0;
+  padding: var(--padding-12xs) var(--padding-3xs);
   cursor: pointer;
   text-align: center;
   color: var(--neutral-white);
@@ -111,7 +103,10 @@
   width: 423px;
   border-radius: 0 0 var(--br-11xl) var(--br-11xl);
   background-color: var(--neutral-white);
-  padding: var(--padding-5xs) var(--padding-17xl) var(--padding-4xs);
+  flex-shrink: 0;
+  padding: var(--padding-5xs) var(--padding-8xl) var(--padding-4xs)
+    var(--padding-17xl);
+  box-sizing: border-box;
   gap: var(--gap-8xl);
   max-width: 100%;
 }
@@ -135,7 +130,7 @@
 .frameIcon1 {
   width: 30px;
   height: 30px;
-  border-radius: 20px;
+  border-radius: var(--br-xl);
 }
 .frameWrapper {
   display: flex;
@@ -146,6 +141,7 @@
 }
 .frameParent,
 .searchParent {
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
   gap: var(--gap-xl);
@@ -154,7 +150,6 @@
   border-radius: 0 0 0 var(--br-3xs);
   background-color: var(--neutral-white);
   overflow: hidden;
-  display: flex;
   justify-content: flex-start;
   padding: var(--padding-4xs) var(--padding-18xl) var(--padding-7xs);
   z-index: 1;
@@ -163,24 +158,407 @@
   width: 1148px;
   justify-content: space-between;
   padding: 0 0 0 var(--padding-xl);
+  box-sizing: border-box;
   max-width: 100%;
   text-align: left;
   font-size: var(--font-size-mini);
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.frameParent,
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  border-radius: var(--br-11xl);
+  width: 131px;
+  height: 42px;
+  overflow: hidden;
+}
+.draftALegal {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  line-height: 27px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 241px;
+  height: 54px;
+}
+.frameContainer,
+.frameItem {
+  position: relative;
+  border-radius: var(--br-11xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.frameContainer {
+  width: 253px;
+  height: 125px;
+  background-color: var(--color-whitesmoke-100);
+}
+.frameItem {
+  height: 42px;
+  width: 131px;
+}
+.documentUpload {
+  margin: 0;
+  height: 27px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frameParent1,
+.frameWrapper1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent1 {
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-oldlace-100);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-2xl) var(--padding-base);
+  cursor: pointer;
+}
+.frameWrapper1 {
+  height: 258px;
+  width: 268px;
+  flex-direction: column;
+  min-width: 268px;
+}
+.searchOrLegal {
+  margin: 0;
+  position: absolute;
+  height: calc(100% - 26px);
+  top: 12px;
+  left: 33px;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 507px;
+}
+.searchIcon1,
+.searchOrLegalMatterParent {
+  position: absolute;
+  top: 26px;
+  left: 43px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+}
+.searchOrLegalMatterParent {
+  height: 87px;
+  width: 567px;
+  margin: 0 !important;
+  top: 118px;
+  left: -287px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-200);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.editPicture,
+.profilePictureIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.profilePictureIcon {
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.editPicture {
+  box-shadow: var(--card-shadow-sm);
+  background-color: var(--neutral-white);
+  z-index: 1;
+}
+.edit03Icon {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  z-index: 2;
+}
+.editPictureParent {
+  height: 25px;
+  width: 25px;
+  position: relative;
+}
+.profilePictureParent {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 45px 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.yourName {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  color: inherit;
+}
+.yournamegmailcom {
+  position: relative;
+  font-size: var(--paragraph-3-regular-size);
+  line-height: 20px;
+  color: var(--gray-tailwind-500);
+  white-space: nowrap;
+}
+.frameWrapper2,
+.yourNameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper2 {
+  flex: 1;
+  padding: var(--padding-smi) 0 0;
+  box-sizing: border-box;
+  min-width: 224px;
+  max-width: 100%;
+}
+.xIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.frameParent4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frameInner,
+.frameParent3,
+.frameParent4 {
+  align-self: stretch;
+  max-width: 100%;
+}
+.frameInner {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frameParent3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.name,
+.yourName1 {
+  position: relative;
+  line-height: 24px;
+}
+.yourName1 {
+  color: var(--gray-tailwind-600);
+}
+.nameInput {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.myProfileChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.emailAccount {
+  position: relative;
+  line-height: 24px;
+}
+.yournamegmailcom1 {
+  position: relative;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.contactDetails,
+.contactInfo {
+  display: flex;
+  align-items: flex-start;
+}
+.contactDetails {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  font-size: var(--paragraph-3-regular-size);
+  color: var(--gray-tailwind-600);
+}
+.contactInfo {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.myProfileItem {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addNumber,
+.mobileNumber {
+  position: relative;
+  line-height: 24px;
+}
+.addNumber {
+  line-height: 20px;
+}
+.addNumberWrapper,
+.contactInfo1 {
+  display: flex;
+  align-items: flex-start;
+}
+.addNumberWrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  font-size: var(--paragraph-3-regular-size);
+  color: var(--gray-tailwind-600);
+}
+.contactInfo1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.myProfileInner {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.location {
+  position: relative;
+  line-height: 24px;
+}
+.button {
+  align-self: stretch;
+  height: 36px;
+}
+.locationParent {
+  width: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+}
+.usa {
+  position: relative;
+  line-height: 20px;
+}
+.frameParent5,
+.usaWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.usaWrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+  font-size: var(--paragraph-3-regular-size);
+  color: var(--gray-tailwind-600);
+}
+.frameParent5 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameDiv,
+.frameParent2,
+.myProfile {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.myProfile {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: var(--br-xs);
+  background-color: var(--neutral-white);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
+  gap: 23.7px;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--paragraph-2-regular-size);
+  color: var(--gray-tailwind-800);
+  font-family: var(--paragraph-3-regular);
+}
+.frameDiv,
+.frameParent2 {
+  flex-direction: row;
+}
+.frameParent2 {
+  align-items: flex-start;
+  position: relative;
+  min-width: 359px;
+}
+.frameDiv {
+  align-items: flex-end;
+  gap: var(--gap-lgi);
+}
 .landingPage,
 .landingPageInner {
   display: flex;
   box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
 }
 .landingPageInner {
-  width: 915px;
+  width: 909px;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 0 41px;
+  padding: 0 35px;
   max-width: 100%;
 }
 .landingPage {
@@ -192,16 +570,48 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: var(--padding-lg) 0 247px;
+  padding: var(--padding-lg) 0 114px;
   gap: var(--gap-mini);
   line-height: normal;
   letter-spacing: normal;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+  .frameWrapper1 {
+    flex: 1;
+  }
+  .frameDiv {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 675px) {
   .frameGroup {
     display: none;
   }
   .frameParent {
     width: 725px;
+  }
+  .frameParent4 {
+    flex-wrap: wrap;
+  }
+  .myProfile {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .frameParent2 {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .documentUpload,
+  .draftALegal,
+  .searchOrLegal {
+    font-size: var(--font-size-xl);
+    line-height: 22px;
+  }
+  .contactInfo,
+  .contactInfo1,
+  .nameInput {
+    flex-wrap: wrap;
   }
 }

@@ -1,0 +1,201 @@
+.groupIcon,
+.landingPageChild {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.landingPageChild {
+  width: 206px;
+  height: 47px;
+  border-radius: 0 0 0 var(--br-3xs);
+  display: none;
+}
+.groupIcon {
+  align-self: stretch;
+  height: 30px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.content {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl) var(--padding-6xs) 0;
+  box-sizing: border-box;
+}
+.document {
+  text-decoration: none;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+.documentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-7xs) 0 0;
+}
+.clm {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+}
+.clmWrapper {
+  width: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+}
+.draft {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+}
+.draftWrapper {
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.home {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  line-height: 27px;
+  font-weight: 500;
+  color: inherit;
+}
+.homeWrapper,
+.navigation {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.homeWrapper {
+  flex: 1;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-black);
+  padding: var(--padding-12xs) var(--padding-3xs);
+  cursor: pointer;
+  text-align: center;
+  color: var(--neutral-white);
+}
+.navigation {
+  width: 423px;
+  border-radius: 0 0 var(--br-11xl) var(--br-11xl);
+  background-color: var(--neutral-white);
+  flex-shrink: 0;
+  padding: var(--padding-5xs) var(--padding-8xl) var(--padding-4xs)
+    var(--padding-17xl);
+  box-sizing: border-box;
+  gap: var(--gap-8xl);
+  max-width: 100%;
+}
+.searchIcon {
+  height: 28px;
+  width: 29px;
+}
+.searchIcon,
+.searchIcon1,
+.searchPlaceholderIcon {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.searchPlaceholderIcon {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+}
+.searchIcon1 {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--br-xl);
+}
+.searchBar,
+.searchIconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-12xs);
+}
+.searchBar {
+  border-radius: 0 0 0 var(--br-3xs);
+  background-color: var(--neutral-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-18xl) var(--padding-7xs);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.main,
+.settingsDropdownWrapper {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.main {
+  width: 1148px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 0 var(--padding-xl);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.settingsDropdownWrapper {
+  width: 915px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-22xl);
+}
+.landingPage {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--neutral-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-lg) 0 var(--padding-228xl);
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 675px) {
+  .navigation {
+    display: none;
+  }
+  .main {
+    width: 725px;
+  }
+}
